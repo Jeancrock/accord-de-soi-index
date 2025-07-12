@@ -1,0 +1,12 @@
+
+.block {
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+
+.block h2,
+.block p{
+  margin: 10px;
+}

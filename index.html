@@ -17,115 +17,87 @@
                     <span class="hamburger"></span>
                 </summary>
                 <section id="menuList">
-                    <button>Accueil</button>
-                    <button>Prendre Rendez-Vous</button>
-                    <button>Nos Soins</button>
-                    <button>Grille tarifaire</button>
-                    <button>Contact</button>
+                    <button onclick="location.href='./index.html'">Accueil</button>
+                    <button onclick="location.href='./templates/rdv.html'">Prendre Rendez-Vous</button>
+                    <button onclick="location.href='./templates/seances.html'">Nos Séances</button>
+                    <button onclick="location.href='./templates/tarifs.html'">Grille tarifaire</button>
+                    <button onclick="location.href='./templates/contact.html'">Contact</button>
                 </section>
             </details>
         </nav>
 
         <section id="homebutton">
-            <img src="./assets/images/c.png">
+            <img src="./assets/images/c.png" onclick="location.href='./index.html'">
         </section>
 
-        <section id="profilebutton">
-            <button class="Btn">
-                <div class="sign">
-                    <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                        viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-
-                <div class="text">Mon Compte</div>
-            </button>
-        </section>
     </header>
 
     <main>
         <section id="mainSection">
-            <section class="block" id="presentation">
+            <section id="titre">
                 <div>
-                    <img id="mainImg" src="./assets/images/pots.png">
+                    <img id="mainImg" src="./assets/images/pot.png">
                 </div>
                 <div>
                     <H1>Accord De Soi</H1>
                 </div>
                 <div>
-                    <h3>Les bienfaits de nos soins</h3>
-                </div>
-                <div>
-                    <p>Prendre soin de soi est essentiel pour retrouver équilibre, énergie et bien-être intérieur. Nos
-                        soins
-                        thérapeutiques sont conçus pour offrir un moment de pause, de recentrage et de régénération
-                        profonde. Grâce à une approche globale du corps et de l’esprit, nous aidons à libérer les
-                        tensions,
-                        apaiser le mental et rétablir une harmonie naturelle. Chaque séance est une invitation à
-                        ralentir, à
-                        se reconnecter à soi, et à favoriser une meilleure santé émotionnelle et physique.</p>
-                </div>
-                <div>
-                    <h3>Notre approche</h3>
-                </div>
-                <div>
-                    <p>Nous combinons différentes pratiques, dont l’audiothérapie, les massages, et d’autres soins
-                        personnalisés selon vos besoins. Cette synergie de techniques permet d’agir en profondeur, en
-                        douceur, et de manière ciblée. Que vous cherchiez à soulager un stress persistant, à améliorer
-                        votre
-                        sommeil, ou simplement à retrouver un état de calme intérieur, nous vous accompagnons avec
-                        écoute,
-                        respect et bienveillance. Très bientôt, vous découvrirez ici une présentation complète de notre
-                        univers et de nos offres.</p>
+                    <p>Mon histoire m’a conduit à choisir mon activité principale depuis une vingtaine d’années auprès
+                        de personnes en souffrance physique et ou psychique. Mes proches dépendants ont besoin de moi au
+                        quotidien aussi j’ai décidé de m’orienter vers un accompagnement centré sur le bien-être
+                        (massage sonore aux bols tibétains, massage intuitif, techniques énergétiques, ateliers
+                        créatifs). Ces pratiques se complètent déjà à votre convenance et je continuerai également à me
+                        former à de nouvelles techniques.</p>
                 </div>
             </section>
-            <section class="block" id="soins">
+            <section id="soins">
                 <section class="block" id="soin1">
-                    <div>
-                        <img src="./assets/images/table.jpg">
-                    </div>
-                    <div>
-                        <h3>Massage</h3>
-                    </div>
-                    <div>
-                        <p>Le massage est une pratique manuelle visant à détendre les muscles, soulager les tensions et
-                            favoriser le bien-être général. Par pressions, frictions et étirements, il stimule la
-                            circulation sanguine, réduit le stress et améliore la souplesse. Il peut être thérapeutique,
-                            relaxant ou énergétique, selon les techniques utilisées.</p>
-                    </div>
-                </section>
-                <section class="block" id="soin2">
                     <div>
                         <img src="./assets/images/bol.jpg">
                     </div>
                     <div>
-                        <h3>Audiothérapie</h3>
+                        <h3>massage sonore aux bols tibétains/ voyage sonore</h3>
                     </div>
                     <div>
-                        <p>L’audiothérapie avec les sons de bols utilise les vibrations sonores pour harmoniser le corps
-                            et l’esprit. Les fréquences émises par les bols chantants favorisent la relaxation profonde,
-                            réduisent le stress et rééquilibrent l’énergie. Cette méthode douce agit sur le système
-                            nerveux et soutient le bien-être physique, mental et émotionnel.</p>
+                        <p>Le massage sonore s’applique à presque tous, a de nombreux bienfaits et des effets
+                            secondaires quasi-insignifiants. En effet, les sons et les vibrations des bols modifient les
+                            ondes cérébrales, activent le système parasympathique (celui qui nous permet de ralentir, de
+                            régénérer l’organisme et d’éliminer les toxines) et induit une détente corporelle, une
+                            restauration de l’équilibre énergétique du corps...</p>
+                    </div>
+                </section>
+                <section class="block" id="soin2">
+                    <div>
+                        <!-- ----------------------------- A COMPLETER ----------------------------- -->
+                        <img src="./assets/images/">
+                    </div>
+                    <div>
+                        <h3>Massage intuitif</h3>
+                    </div>
+                    <div>
+                        <p>J’étais, et suis encore, persuadée que le bien-être d’un individu et sa conscience de
+                            l’instant présent passent par un lien corporel apaisé et apaisant avec lui-même et les
+                            autres. Afin de vivre selon mes idéaux, j’ai depuis longtemps massé de bon cœur mes proches
+                            et amis dans le quotidien ou lors d’évènements notamment sportifs mais sans aucune formation
+                            diplômante en massage, sans protocole à suivre...</p>
                     </div>
                 </section>
                 <section class="block" id="soin3">
                     <div>
-                        <img src="./assets/images/foot.jpg">
+                        <!-- ----------------------------- A COMPLETER ----------------------------- -->
+                        <img src="./assets/images/">
                     </div>
                     <div>
-                        <h3>Réflexologie Plantaire</h3>
+                        <h3>En savoir plus</h3>
                     </div>
                     <div>
-                        <p>La réflexologie plantaire est une technique de soin basée sur la stimulation de zones
-                            réflexes situées sur les pieds. Chaque zone correspond à un organe ou une partie du corps.
-                            Par pressions ciblées, elle favorise la détente, relance l’énergie vitale et soutient
-                            l’équilibre global du corps et de l’esprit.</p>
+                        <p>Je peux également vous proposer d'autres types de séances comme des séances énergétiques, de
+                            la cartomancie ainsi que divers ateliers créatifs...</p>
                     </div>
                 </section>
+            </section>
+            <section id="rdvtarif" class="block">
+
             </section>
         </section>
 
@@ -137,8 +109,8 @@
             <h5>Conditions générales d’utilisation</h5>
         </section>
         <section id="R">
-            <h5>Politique de confidentialité</h5>
-            <h5>Mentions légales</h5>
+            <h5 onclick="location.href='./templates/confidenciality.html'">Politique de confidentialité</h5>
+            <h5 onclick="location.href='./templates/legal.html'">Mentions légales</h5>
         </section>
     </footer>
 

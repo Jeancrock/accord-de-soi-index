@@ -1,0 +1,65 @@
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------- SOINS --------------------------------- */
+
+#soins .block {
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img {
+    align-content: center;;
+    width: 33%;
+}
+
+.txt {
+    width: 60%;
+}
+
+#soins img {
+    height: auto;
+    min-width: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#soins h3,
+#soins p {
+    padding: 10px
+}
+
+.soin {
+    margin: 10px;
+    display: flex;
+}
+
+@media (max-width:900px) {
+    .img {
+        width: 100%;
+    }
+
+    .txt {
+        width: 100%;
+    }
+
+    .soin {
+        flex-direction: column;
+    }
+
+    .rev {
+        flex-direction: column-reverse;
+    }
+
+    #soins img {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        object-fit: contain;
+        min-height: 175px;
+    }
+}

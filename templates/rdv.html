@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accord de soi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rdv.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <details>
+                <summary id="menuButton">
+                    <span class="hamburger"></span>
+                </summary>
+                <section id="menuList">
+                    <button onclick="location.href='../index.html'">Accueil</button>
+                    <button onclick="location.href='./rdv.html'">Prendre Rendez-Vous</button>
+                    <button onclick="location.href='./seances.html'">Nos Séances</button>
+                    <button onclick="location.href='./tarifs.html'">Grille tarifaire</button>
+                    <button onclick="location.href='./contact.html'">Contact</button>
+                </section>
+            </details>
+        </nav>
+
+        <section id="homebutton">
+            <img src="../assets/images/c.png" onclick="location.href='../index.html'">
+        </section>
+    </header>
+
+    <main>
+
+        <section id="mainSection">
+            <section id="titre">
+                <div>
+                    <h1>Prise de Rendez-Vous</h1>
+                </div>
+                <div>
+                    <p>A l'issu de ce formulaire, vous aurez acces aux horaires disponibles.</p>
+                </div>
+            </section>
+            <section id="formulaire" class="block">
+
+                <form>
+                    <div class="part" id="perso">
+                        <H2>Vos Informations Personnelles</H2>
+
+                        <div>
+                            <label for="nom">Nom :</label><br>
+                            <input type="text" name="nom" required><br>
+                        </div>
+
+                        <div>
+                            <label for="prenom">Prenom :</label><br>
+                            <input type="text" name="prenom" required><br>
+                        </div>
+
+                        <div>
+                            <label foBda>Date de naissance :</label><br>
+                            <input type="date" name="Bdate" required><br>
+                        </div>
+
+                        <div>
+                            <label for="phone">Telephone :</label><br>
+                            <input type="tel" name="phone" required><br>
+                        </div>
+
+                    </div>
+                    <div class="part" id="medic">
+                        <h2>Vos Informations Médicales</h2>
+
+                        <div class="medicQ">
+                            <p>Êtes-vous enceinte ?</p>
+
+                            <input type="radio" name="enceinte" id="enceinte_oui" class="trigger-oui">
+                            <label for="enceinte_oui">Oui</label>
+
+                            <input type="radio" name="enceinte" id="enceinte_non">
+                            <label for="enceinte_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_enceinte">Approfondissements :</label><br>
+                                <input type="text" id="raison_enceinte" name="raison_enceinte">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Portez-vous un pacemaker ?</p>
+
+                            <input type="radio" name="pacemaker" id="pacemaker_oui" class="trigger-oui">
+                            <label for="pacemaker_oui">Oui</label>
+
+                            <input type="radio" name="pacemaker" id="pacemaker_non">
+                            <label for="pacemaker_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_pacemaker">Approfondissements :</label><br>
+                                <input type="text" id="raison_pacemaker" name="raison_pacemaker">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Portez-vous des broches chirurgicales ?</p>
+
+                            <input type="radio" name="broches" id="broches_oui" class="trigger-oui">
+                            <label for="broches_oui">Oui</label>
+
+                            <input type="radio" name="broches" id="broches_non">
+                            <label for="broches_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_broches">Approfondissements :</label><br>
+                                <input type="text" id="raison_broches" name="raison_broches">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Êtes-vous porteur d'une maladie ?</p>
+
+                            <input type="radio" name="maladie" id="maladie_oui" class="trigger-oui">
+                            <label for="maladie_oui">Oui</label>
+
+                            <input type="radio" name="maladie" id="maladie_non">
+                            <label for="maladie_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_maladie">Approfondissements :</label><br>
+                                <input type="text" id="raison_maladie" name="raison_maladie">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Avez-vous des troubles psychologiques ou traumatismes ?</p>
+
+                            <input type="radio" name="troubles" id="troubles_oui" class="trigger-oui">
+                            <label for="troubles_oui">Oui</label>
+
+                            <input type="radio" name="troubles" id="troubles_non">
+                            <label for="troubles_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_troubles">Approfondissements :</label><br>
+                                <input type="text" id="raison_troubles" name="raison_troubles">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Suivez-vous un traitement médical ?</p>
+
+                            <input type="radio" name="traitement" id="traitement_oui" class="trigger-oui">
+                            <label for="traitement_oui">Oui</label>
+
+                            <input type="radio" name="traitement" id="traitement_non">
+                            <label for="traitement_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_traitement">Approfondissements :</label><br>
+                                <input type="text" id="raison_traitement" name="raison_traitement">
+                            </div>
+                        </div>
+
+                        <div class="medicQ">
+                            <p>Avez-vous subi une opération récemment ?</p>
+
+                            <input type="radio" name="operations" id="operations_oui" class="trigger-oui">
+                            <label for="operations_oui">Oui</label>
+
+                            <input type="radio" name="operations" id="operations_non">
+                            <label for="operations_non">Non</label>
+
+                            <div class="texte-supplementaire">
+                                <label for="raison_operations">Approfondissements :</label><br>
+                                <input type="text" id="raison_operations" name="raison_operations">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="comment">Autre, précisez :</label><br>
+                        <textarea name="comment" required></textarea><br>
+                    </div>
+                    <div>
+                        <label for="rgpd">J'ai lu et j'accepte les RGPD (Regles Generales de Protection des données )
+                        </label><br>
+                        <input type="checkbox" name="rgpd" required></textarea><br>
+                    </div>
+                    <div>
+                        <button type="submit">Envoyer</button><br>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section id="L">
+            <h5>Nos Reseaux</h5>
+            <h5>Conditions générales d’utilisation</h5>
+        </section>
+        <section id="R">
+            <h5 onclick="location.href='./confidenciality.html'">Politique de confidentialité</h5>
+            <h5 onclick="location.href='./legal.html'">Mentions légales</h5>
+        </section>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -176,9 +176,10 @@ details[close] button {
 #homebutton {
     display: flex;
     justify-content: center;
-    /* Centre horizontalement */
     align-items: center;
-    /* Centre verticalement */
+}
+#homebutton:hover {
+    cursor: pointer;
 }
 
 #homebutton img {
@@ -187,105 +188,50 @@ details[close] button {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                 MON COMPTE                                 */
-/* -------------------------------------------------------------------------- */
-#profilebutton {
-    display: flex;
-    justify-content: right;
-    /* Centre horizontalement */
-    align-items: center;
-    /* Centre verticalement */
-}
-
-
-/* From Uiverse.io by mRcOol7 */
-.Btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50px;
-    height: 50px;
-    border: solid black 1px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition-duration: 0.4s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    background: radial-gradient(circle, #f9dd9a 0%, #ffcbf6 100%);
-}
-
-.sign {
-    width: 100%;
-    transition-duration: 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sign svg {
-    width: 17px;
-}
-
-.sign svg path {
-    fill: #008001;
-}
-
-.text {
-    position: absolute;
-    right: 0%;
-    width: 0%;
-    opacity: 0;
-    color: #008001;
-    font-size: 1.2em;
-    font-weight: 600;
-    transition-duration: 0.4s;
-}
-
-.Btn:hover {
-    width: 150px;
-    border-radius: 20px;
-    border: solid black 1px;
-    transition-duration: 0.4s;
-    background: radial-gradient(circle, #f9dd9a 0%, #ffcbf6 100%);
-}
-
-.Btn:hover .sign {
-    width: 30%;
-    transition-duration: 0.4s;
-    padding-left: 12px;
-}
-
-.Btn:hover .text {
-    opacity: 1;
-    width: 70%;
-    transition-duration: 0.4s;
-    padding-right: 10px;
-}
-
-.Btn:active {
-    transform: translate(2px, 2px);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-}
-
-
-/* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
 
 main {
-    display:inline-grid;
+    display: inline-grid;
     flex: 1;
     width: 100%;
     background: radial-gradient(circle, #f9dd9a 0%, #ffcbf6 100%);
 }
+
+#mainSection {
+    width: 70%;
+    display: inline-grid;
+    justify-self: center;
+    margin: auto;
+    padding: 10px;
+}
+
+/* ---------------------------------- TITRE --------------------------------- */
+H1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+#titre div {
+    padding: 10px;
+}
+
+#mainImg {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 
 footer {
-    display:inline-flex;
+    display: inline-flex;
     min-height: 150px;
     width: 100%;
     background-color: antiquewhite;
@@ -303,4 +249,9 @@ footer section {
 footer section h5 {
     justify-self: center;
     margin: 10px;
+}
+
+footer section h5:hover {
+    color: darkblue;
+    cursor: pointer;
 }
